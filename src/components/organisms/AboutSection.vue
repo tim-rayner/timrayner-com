@@ -1,10 +1,18 @@
 <script setup lang="ts">
 import Button from 'primevue/button'
 import Pill from '@/components/atoms/Pill.vue'
+
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+const goTo = (id: string) => {
+  router.push({ hash: `#${id}` })
+}
 </script>
 
 <template>
-  <div>
+  <div id="about">
     <h2>About Section</h2>
     <p class="my-2">
       This is some text about me, a little to do with my career and a little to do with my personal
@@ -14,7 +22,7 @@ import Pill from '@/components/atoms/Pill.vue'
       this is some more text about the portfolio, what I am trying to achieve with it. etc.
     </p>
 
-    <Button label="lets work together" class="my-2" rounded />
+    <Button label="lets work together" class="my-2" @click="goTo('contact')" rounded />
 
     <div class="flex flex-wrap">
       <Pill> Vue </Pill>

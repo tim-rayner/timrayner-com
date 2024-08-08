@@ -8,6 +8,8 @@ import App from './App.vue'
 import router from './router'
 import { definePreset } from '@primevue/themes'
 
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
 const MyPreset = definePreset(Aura, {
   semantic: {
     primary: {
@@ -30,6 +32,7 @@ const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
+app.component('FontAwesomeIcon', FontAwesomeIcon)
 app.use(PrimeVue, {
   theme: {
     preset: MyPreset

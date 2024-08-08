@@ -6,13 +6,14 @@ import Footer from '@/components/molecules/Footer.vue'
 
 <template>
   <header></header>
-  <!-- TODO: IMPLEMENT LAYOUT -->
-  <!-- <RouterLink to="/about">About</RouterLink> -->
   <Navbar />
   <main>
-    <RouterView />
+    <div class="mt-20" id="top">
+      <RouterView />
+    </div>
   </main>
   <Footer />
+  <!-- TODO: add a scroll based progress bar along the bottom of the page -->
 </template>
 
 <style scoped></style>
