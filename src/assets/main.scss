@@ -9,6 +9,10 @@ $primary-color: #6366f1;
 $secondary-color: #080808;
 $background-color: #121318;
 
+html,
+body {
+  background-color: $background-color;
+}
 #app {
   max-width: 1280px;
   min-height: 100vh;

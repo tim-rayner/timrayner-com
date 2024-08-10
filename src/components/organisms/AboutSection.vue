@@ -23,12 +23,5 @@ const goTo = (id: string) => {
     </p>
 
     <Button label="lets work together" class="my-2" @click="goTo('contact')" rounded />
-
-    <div class="flex flex-wrap">
-      <Pill> Vue </Pill>
-      <Pill> React </Pill>
-      <Pill> Angular </Pill>
-      <Pill> C# </Pill>
-    </div>
   </div>
 </template>
