@@ -1,6 +1,14 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import ProjectCarousel from '../molecules/ProjectCarousel.vue'
 import { ShowcaseProjects } from '@/constants/HomeConstants'
+
+import { useUser, useRepos, useCommits } from '@/composables/useGithubApi'
+import MoreProjects from '../molecules/MoreProjects.vue'
+
+const username = ref('tim-rayner')
+
+const reposQuery = useRepos(username.value)
 </script>
 
 <template>
@@ -15,11 +23,13 @@ import { ShowcaseProjects } from '@/constants/HomeConstants'
     </div>
 
     <div class="more-projects">
-      <p class="my-2">
-        Here are some more projects and repos pulled from my
-        <a href="" class="link text-[#6366f1] underline">github</a> profile
+      <p class="my-2 mb-4">
+        Here are some more projects I've been working on recently, pulled from my
+        <a href="" class="link text-[#6366f1] underline">github</a> profile:
       </p>
-      <div class="h-[200px] border border-purple-600"></div>
+      <div class="min-h-[200px]">
+        <MoreProjects v-if="reposQuery.data.value" :projects="reposQuery.data.value" />
+      </div>
     </div>
   </div>
 </template>

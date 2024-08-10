@@ -16,7 +16,6 @@ const router = createRouter({
       if (element) {
         setTimeout(() => {
           let yOffset = -100 // default y offset in pixels from the top
-          console.log(to.name)
           if (to.name === 'top' || to.name === 'home') {
             yOffset = -200 // no offset for 'top' or 'home'
           }

@@ -18,6 +18,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "@primevue/themes": "^4.0.4",
+    "@tanstack/vue-query": "^5.51.21",
+    "axios": "^1.7.3",
     "pinia": "^2.1.7",
     "primevue": "^4.0.4",
     "swiper": "^11.1.9",

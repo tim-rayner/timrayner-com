@@ -15,12 +15,9 @@ const spaceBetween = 10
 
 const onProgress = (e: CustomEvent) => {
   const [swiper, progress] = e.detail
-  console.log(progress)
 }
 
-const onSlideChange = (e: CustomEvent) => {
-  console.log('slide changed')
-}
+const onSlideChange = (e: CustomEvent) => {}
 </script>
 
 <template>
@@ -39,10 +36,10 @@ const onSlideChange = (e: CustomEvent) => {
     }"
     @swiperprogress="onProgress"
     @swiperslidechange="onSlideChange"
-    class="py-6"
+    class="pt-6"
   >
     <swiper-slide v-for="project in projects" :key="project.link" class="!h-auto mb-12">
-      <div class="bg-[#15181f] h-full w-[95%] mx-auto rounded-2xl p-4">
+      <div class="bg-[#15181f] h-full mx-auto rounded-2xl p-4">
         <div class="flex flex-col my-auto">
           <h3>{{ project.title }}</h3>
           <p class="!text-[#a8b1c0]">{{ project.description }}</p>
