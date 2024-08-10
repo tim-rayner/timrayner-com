@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ProjectCarousel from '../molecules/ProjectCarousel.vue'
+import { ShowcaseProjects } from '@/constants/HomeConstants'
+</script>
 
 <template>
   <div id="projects">
@@ -6,7 +9,9 @@
 
     <div class="main-projects mb-12">
       <p class="my-2">Here are some of the projects I have worked on.</p>
-      <div class="h-[300px] border border-purple-600"></div>
+      <div class="">
+        <ProjectCarousel :projects="ShowcaseProjects" />
+      </div>
     </div>
 
     <div class="more-projects">

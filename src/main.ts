@@ -1,4 +1,6 @@
 import './assets/main.scss'
+import 'swiper/css'
+
 import PrimeVue from 'primevue/config'
 import Aura from '@primevue/themes/aura'
 import { createApp } from 'vue'

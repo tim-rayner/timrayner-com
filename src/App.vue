@@ -6,6 +6,7 @@ import Footer from '@/components/molecules/Footer.vue'
 
 <template>
   <header></header>
+  <!-- TODO: add Framer Motion animations into site to make it seem more dynamic: https://www.framer.com/motion/ -->
   <Navbar />
   <main>
     <div class="mt-20" id="top">
