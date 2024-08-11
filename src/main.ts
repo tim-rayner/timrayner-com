@@ -2,6 +2,7 @@ import './assets/main.scss'
 import 'swiper/css'
 
 import PrimeVue from 'primevue/config'
+//@ts-ignore
 import Aura from '@primevue/themes/aura'
 import { VueQueryPlugin } from '@tanstack/vue-query'
 
