@@ -15,7 +15,7 @@
     "moduleResolution": "Bundler",
     "types": ["node"],
     "target": "esnext",
-    "strict": true,
+    "strict": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
