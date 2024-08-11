@@ -12,7 +12,7 @@ const avatar_url = computed(() => userQuery.data?.value?.avatar_url)
 
 <template>
   <div class="text-center md:text-left content-center" id="home">
-    <div class="avatar mx-auto rounded-full overflow-hidden w-44" v-if="avatar_url">
+    <div class="avatar mx-auto rounded-full overflow-hidden w-44 mb-8" v-if="avatar_url">
       <img :src="avatar_url" alt="Tim Rayner" />
     </div>
     <h1 class="text-6xl my-2">Tim Rayner</h1>
