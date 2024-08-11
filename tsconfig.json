@@ -1,6 +1,6 @@
 {
   "files": [],
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/types/env.d.ts"],
   "exclude": ["node_modules", "dist", "types"],
   "references": [
     {
