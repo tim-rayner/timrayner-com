@@ -78,7 +78,7 @@ const handleRedirect = (url: string) => {
       <p class="!text-[#a8b1c0]">{{ project.description }}</p>
       <small class="!text-[#a8b1c0]">Last updated: {{ formatDate(project.updated_at) }}</small>
       <div class="flex flex-wrap mt-2 items-center">
-        <small class="!text-[#a8b1c0]"> Main language: </small
+        <small class="!text-[#a8b1c0]"> Main technology: </small
         ><Pill class="ml-2">{{ project.language }}</Pill>
       </div>
     </div>

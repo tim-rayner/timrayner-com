@@ -13,10 +13,13 @@ const reposQuery = useRepos(username.value)
 
 <template>
   <div id="projects">
-    <h2>Projects</h2>
+    <h2>Personal projects</h2>
 
     <div class="main-projects mb-12">
-      <p class="my-2">Here are some of the projects I have worked on.</p>
+      <p class="my-2">
+        Here are some of my favourite side projects I have worked on in my free time, to aid my
+        learning and career development:
+      </p>
       <div class="">
         <ProjectCarousel :projects="ShowcaseProjects" />
       </div>
