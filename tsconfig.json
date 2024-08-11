@@ -1,7 +1,7 @@
 {
   "files": [],
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules", "dist", "types"],
   "references": [
     {
       "path": "./tsconfig.node.json"
@@ -15,7 +15,7 @@
     "allowJs": true,
     "skipLibCheck": true,
     "declaration": true,
-    "declarationDir": "types",
-    "outDir": "dist"
+    "declarationDir": "./types",
+    "outDir": "./dist"
   }
 }
