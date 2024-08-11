@@ -47,7 +47,7 @@ onUnmounted(() => {
 <template>
   <nav
     class="text-white px-6 py-3 rounded-3xl max-w-[375px] md:max-w-[600px] mx-auto mb-6 fixed top-6 left-0 right-0 z-10"
-    :class="{ 'bg-[#292929] ': hasScrolled }"
+    :class="{ 'bg-[#292929] shadow-purple-500/10 ': hasScrolled }"
   >
     <ul class="flex justify-between">
       <li :class="{ 'text-[#6366f1]': currentSection === 'home' }">
@@ -65,3 +65,10 @@ onUnmounted(() => {
     </ul>
   </nav>
 </template>
+<style scoped>
+.shadow-purple-500\/10 {
+  box-shadow:
+    0 4px 7px -1px rgba(99, 102, 241, 0.1),
+    0 2px 5px -1px rgba(99, 102, 241, 0.06);
+}
+</style>

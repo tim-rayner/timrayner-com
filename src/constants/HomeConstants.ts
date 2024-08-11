@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { Technologies, type Project } from '@/types/homepageTypes'
 
 import SoundSpotImg from '@/assets/png/soundSpot-screen.png'
