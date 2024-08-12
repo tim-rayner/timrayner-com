@@ -13,16 +13,16 @@ const goTo = (id: string) => {
 
 <template>
   <div id="about">
-    <h2>Hi, I'm Tim 👋🏻</h2>
+    <h2 class="text-xl md:text-2xl">Hi, I'm Tim 👋🏻</h2>
 
-    <p class="my-2">
+    <p class="my-2 mb-4 md:mb-2">
       A full stack software developer based in the UK. With over 6 years of commercial experience, I
       have a passion for building projects & solving problems with code.
     </p>
-    <p class="my-2">
+    <p class="my-2 mb-4 md:mb-2">
       Scroll to explore more about my work, skills & experience. Or click the button to reach out
     </p>
 
-    <Button label="Contact me" class="my-2" size="small" @click="goTo('contact')" rounded />
+    <Button label="Contact me" class="my-2" @click="goTo('contact')" rounded />
   </div>
 </template>

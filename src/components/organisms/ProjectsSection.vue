@@ -12,8 +12,8 @@ const reposQuery = useRepos(username.value)
 </script>
 
 <template>
-  <div id="projects">
-    <h2>Personal projects</h2>
+  <div id="projects" class="">
+    <h2 class="text-xl md:text-2xl">Personal projects</h2>
 
     <div class="main-projects mb-12">
       <p class="my-2">
@@ -26,6 +26,7 @@ const reposQuery = useRepos(username.value)
     </div>
 
     <div class="more-projects">
+      <h2 class="md:text-lg">More projects</h2>
       <p class="my-2 mb-4">
         Here are some more projects I've been working on recently, pulled from my
         <a href="" class="link text-[#6366f1] underline">github</a> profile:

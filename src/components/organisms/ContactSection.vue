@@ -5,8 +5,9 @@ import { faEnvelope, faPhone, faLocationPin } from '@fortawesome/free-solid-svg-
 
 <template>
   <div id="contact">
-    <h2>Let's work together</h2>
-    <p>If you'd like to get in contact, feel free to reach out to me:</p>
+    <h2 class="text-xl md:text-2xl">Let's work together 🫱🏻‍🫲🏽</h2>
+    <!-- TODO: make handshake bob up and down when clicked on from the navbar menu-->
+    <p class="my-2 mb-5">If you'd like to get in contact, feel free to reach out to me:</p>
     <div class="content-between">
       <ContactPill
         :icon="faEnvelope"

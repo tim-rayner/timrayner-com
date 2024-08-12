@@ -1,15 +1,17 @@
 <script setup lang="ts">
 import type { Project } from '@/types/homepageTypes'
 import Pill from '../atoms/Pill.vue'
+import Button from 'primevue/button'
+
+import { register } from 'swiper/element/bundle'
+
 type ShowcaseCarouselProps = {
   projects: Project[]
 }
 
-const { projects } = defineProps<ShowcaseCarouselProps>()
-
-import { register } from 'swiper/element/bundle'
-
 register()
+
+const { projects } = defineProps<ShowcaseCarouselProps>()
 
 const spaceBetween = 10
 
@@ -18,22 +20,29 @@ const onProgress = (e: CustomEvent) => {
 }
 
 const onSlideChange = (e: CustomEvent) => {}
+
+const handleRedirect = (url: string) => {
+  window.open(url, '_blank')
+}
 </script>
 
 <template>
   <!-- TODO: build a swiperjs carousel: https://swiperjs.com/vue -->
+
   <swiper-container
     :space-between="spaceBetween"
     :loop="true"
     :pagination="true"
+    :autoplay="{ delay: 7500 }"
     :breakpoints="{
       768: {
         slidesPerView: 1
       },
-      1200: {
+      1020: {
         slidesPerView: 2
       }
     }"
+    :pauseOnMouseEnter="true"
     @swiperprogress="onProgress"
     @swiperslidechange="onSlideChange"
     class="pt-6"
@@ -46,6 +55,7 @@ const onSlideChange = (e: CustomEvent) => {}
           <div class="pills-container flex flex-wrap mt-2">
             <Pill v-for="tech in project.technologies" :key="tech"> {{ tech }}</Pill>
           </div>
+          <Button label="View project" class="mt-4 w-fit" @click="handleRedirect(project.link)" />
         </div>
       </div>
     </swiper-slide>
@@ -55,7 +65,6 @@ const onSlideChange = (e: CustomEvent) => {}
 <style lang="scss" scoped>
 swiper-container::part(pagination) {
   position: relative;
-  bottom: -2px;
 }
 
 swiper-container::part(bullet) {

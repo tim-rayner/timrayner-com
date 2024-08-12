@@ -71,18 +71,18 @@ const handleRedirect = (url: string) => {
       @click="handleRedirect(project.html_url)"
     >
       <div class="flex items-center">
-        <h3 class="font-semibold text-white">{{ project.name }}</h3>
+        <h3 class="font-semibold text-white md:text-lg">{{ project.name }}</h3>
         <font-awesome-icon :icon="faArrowRightFromBracket" class="text-[#6366f1] ml-auto" />
       </div>
 
       <p class="!text-[#a8b1c0]">{{ project.description }}</p>
       <small class="!text-[#a8b1c0]">Last updated: {{ formatDate(project.updated_at) }}</small>
-      <div class="flex flex-wrap mt-2 items-center">
+      <div class="flex flex-wrap mt-2 md:mt-3 items-center">
         <small class="!text-[#a8b1c0]"> Main technology: </small
         ><Pill class="ml-2">{{ project.language }}</Pill>
       </div>
     </div>
 
-    <Button label="load more" class="mx-auto" @click="toggleMore" v-if="!projectsToggled" />
+    <Button label="Load more" class="mx-auto" @click="toggleMore" v-if="!projectsToggled" rounded />
   </div>
 </template>
