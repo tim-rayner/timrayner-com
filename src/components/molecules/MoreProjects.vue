@@ -75,7 +75,7 @@ const handleRedirect = (url: string) => {
         <font-awesome-icon :icon="faArrowRightFromBracket" class="text-[#6366f1] ml-auto" />
       </div>
 
-      <p class="!text-[#a8b1c0]">{{ project.description }}</p>
+      <p class="!text-[#a8b1c0] break-words">{{ project.description }}</p>
       <small class="!text-[#a8b1c0]">Last updated: {{ formatDate(project.updated_at) }}</small>
       <div class="flex flex-wrap mt-2 md:mt-3 items-center">
         <small class="!text-[#a8b1c0]"> Main technology: </small
