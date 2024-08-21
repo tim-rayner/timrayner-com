@@ -33,7 +33,7 @@ const isEvenId = (id: number) => {
       </span>
     </template>
     <template #content="slotProps">
-      <Card class="!bg-[#15181f] mb-6 p-4 rounded-lg w-full">
+      <Card class="!bg-[#15181f] mb-6 rounded-lg w-full">
         <template #title>
           {{ slotProps.item?.company }}
         </template>
@@ -74,6 +74,11 @@ const isEvenId = (id: number) => {
   }
 }
 
+.p-timeline-event-separator {
+  z-index: 0;
+  margin-top: 10px;
+}
+
 .p-card-title {
   color: #fff;
 }
@@ -95,6 +100,15 @@ const isEvenId = (id: number) => {
   .p-timeline-event-opposite {
     display: none !important ;
   }
+
+  .p-timeline-event-content {
+    padding: 10px !important;
+  }
+
+  .p-timeline-event-separator {
+    margin-top: 10px;
+  }
+
   ::v-deep(.customized-timeline) {
     .p-timeline-event:nth-child(even) {
       flex-direction: row;
