@@ -23,7 +23,7 @@ const goTo = (id: string) => {
       Scroll to explore more about my work, skills & experience. Or click the button to reach out
     </p>
 
-    <Button label="Contact me" class="my-2" @click="goTo('contact')" rounded />
+    <Button label="Contact me" class="my-6" @click="goTo('contact')" rounded />
 
     <TimelineVue :employmentHistory="EmoploymentHistory" />
   </div>
