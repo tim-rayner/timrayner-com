@@ -64,13 +64,13 @@ const isEvenId = (id: number) => {
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(168, 128, 255, 0.1); /* Brighter purple with 10% opacity */
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.6); /* Brighter purple with 10% opacity */
   }
   70% {
-    box-shadow: 0 0 20px 20px rgba(168, 128, 255, 0); /* Brighter purple with 0% opacity */
+    box-shadow: 0 0 20px 20px rgba(99, 102, 241, 0); /* Brighter purple with 0% opacity */
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(168, 128, 255, 0); /* Brighter purple with 0% opacity */
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0); /* Brighter purple with 0% opacity */
   }
 }
 
