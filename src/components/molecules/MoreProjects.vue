@@ -90,6 +90,12 @@ const truncateText = (text: string | null, maxLength: number) => {
       </div>
     </div>
 
-    <Button label="Load more" class="mx-auto" @click="toggleMore" v-if="!projectsToggled" rounded />
+    <Button
+      label="Load more"
+      class="mx-auto mt-6"
+      @click="toggleMore"
+      v-if="!projectsToggled"
+      rounded
+    />
   </div>
 </template>
