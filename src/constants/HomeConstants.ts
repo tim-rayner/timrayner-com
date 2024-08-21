@@ -75,9 +75,9 @@ export const EmoploymentHistory: Employment[] = [
       Technologies.SASS,
       Technologies.AZURE
     ],
-    description: `<p>I am currently working as a Frontend software developer at Mobilityways, after deciding to specialise in a particular area of the stack; I chose to home in on my frontend skills.</p></br>
-                  <p>Vue 3 has been the technology I have been primarily working with for the past two years, however I have also worked with the likes of react native, handlebars (email template development), Razor, C# and SQL.</p></br>
-                  <p>I would say my time at Mobilityways has made me a true perfectionist about my work, and boosted my confidence in front end development so much.</p></br>`,
+    description: `<p>I am currently a Frontend Software Developer at Mobilityways, having chosen to focus on specializing in frontend development.</p></br>
+    <p>For the past two years, I've primarily worked with Vue 3, while also gaining experience with React Native, Handlebars for email templates, Razor, C#, and keeping up with my SQL skills.</p></br>
+    <p>My time at Mobilityways has made me a perfectionist in my work and greatly boosted my confidence in frontend development as a whole.</p></br>`,
     logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQFeeZ02QCGz8w/company-logo_200_200/company-logo_200_200/0/1663758987311/mobilityways_logo?e=1732147200&v=beta&t=bs-tFeffCJAqTZxRoR9CoXWTCgMHCgzIbVVlavWS0uw',
     linkedIn: 'https://www.linkedin.com/company/mobilityways'
   },
@@ -97,9 +97,8 @@ export const EmoploymentHistory: Employment[] = [
       Technologies.JEST,
       Technologies.DOTNET
     ],
-    description: `
-    <p>I worked as a full stack Jr software developer at Asprey Assets, a company providing asset management software to social housing committees via cloud-based single page applications and APIs. Since starting at Asprey, I have really homed in my skills working with Angular, .NET Core, and Microsoft SQL Server. I have become a valued member of the development team, capable of developing and deploying new features and ideas through a continuous integration development pipeline using Git, as well as contributing with other developers utilising this same CI/CD pattern.</p></br>  
-    <p>I was assigned as the development team leader in the field of integrating a comprehensive testing infrastructure across the whole stack of our existing system. This is something I learnt and implemented myself as a side-project within my role, as well as my daily development duties. This helped enhance my time management skills as well as my team leading/management skills.</p></br>`,
+    description: `<p>As a Full Stack Junior Developer at Asprey Assets, I contributed to building cloud-based, single-page applications and APIs for social housing committees. Working at Asprey allowed me to refine my expertise in Angular, .NET Core, and Microsoft SQL Server. I played a key role in developing and deploying new features through a CI/CD pipeline using Git, collaborating closely with the team.</p></br>  
+                  <p>I led the integration of a comprehensive testing infrastructure across our existing system. This self-initiated project, along with my regular development tasks, strengthened my time management and team leadership skills.</p></br>`,
     logo: 'https://media.licdn.com/dms/image/v2/C4D0BAQGL03XRqjCXnA/company-logo_200_200/company-logo_200_200/0/1630495261709/asprey_management_solutions_logo?e=1732147200&v=beta&t=UEutTk2z1DmqVKEXafPjm8IKMt2gazH0Kd8yDxO1uTE',
     linkedIn: 'https://www.linkedin.com/company/asprey-management-solutions'
   },
@@ -126,9 +125,8 @@ export const EmoploymentHistory: Employment[] = [
       Technologies.MYSQL,
       Technologies.SWIFT
     ],
-    description: `
-    <p>Crisp Malt marks the start of my professional career in software development. I initially joined the company as an Apprentice in October 2019. I completed my apprenticeship in August 2021 gaining a distinction. I was then offered a full-time position as a Full Stack Software Developer. Whilst being employed at Crisp I expanded my skillset significantly into full stack development utilising technologies such as Visual C#, ASP.NET Core, ASP.NET Framework, Entity Framework (Core), SQL, React, and various other relevant cloud-based technologies such as Microsoft Azure.</p></br>
-    <p>After transitioning from an apprentice to one of Crisp's primary web developers, I pioneered bringing existing systems into the cloud using Microsoft Azure, as well as building new innovative web-based solutions from the ground up across the entire stack.</p></br>`,
+    description: `<p>Crisp Malt was where my professional software development career began. I joined as an Apprentice in October 2019 and completed my apprenticeship with distinction by August 2021. Following that, I was offered a full-time role as a Full Stack Developer. During my time at Crisp, I significantly expanded my skills, working with technologies like Visual C#, ASP.NET Core, Entity Framework, SQL, React, and cloud services such as Microsoft Azure.</p></br>
+      <p>After transitioning from apprentice to a lead web developer, I spearheaded the migration of existing systems to the cloud using Microsoft Azure, while also building new web solutions across the full stack.</p></br>`,
     logo: 'https://media.licdn.com/dms/image/v2/C4E0BAQE0_qXjPmCHSw/company-logo_200_200/company-logo_200_200/0/1630646319463/crisp_malt_logo?e=1732147200&v=beta&t=ulxYhCNWvnsPkRtyc9YGkY0KiTpqqQMaXJeIYyewWDY',
     linkedIn: 'https://www.linkedin.com/company/crisp-malt/'
   }

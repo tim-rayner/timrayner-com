@@ -25,6 +25,9 @@ const goTo = (id: string) => {
 
     <Button label="Contact me" class="my-6" @click="goTo('contact')" rounded />
 
-    <TimelineVue :employmentHistory="EmoploymentHistory" />
+    <div class="my-6">
+      <h2 class="text-xl md:text-2xl md:text-center">My story, so far...</h2>
+      <TimelineVue :employmentHistory="EmoploymentHistory" />
+    </div>
   </div>
 </template>
