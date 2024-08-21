@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import ProjectCarousel from '../molecules/ProjectCarousel.vue'
 import { ShowcaseProjects } from '@/constants/HomeConstants'
 
-import { useUser, useRepos, useCommits } from '@/composables/useGithubApi'
+import { useRepos } from '@/composables/useGithubApi'
 import MoreProjects from '../molecules/MoreProjects.vue'
 
 const username = ref('tim-rayner')
@@ -26,7 +26,7 @@ const reposQuery = useRepos(username.value)
     </div>
 
     <div class="more-projects">
-      <h2 class="md:text-lg">More projects</h2>
+      <h2 class="text-xl md:text-2xl">Recent repositories</h2>
       <p class="my-2 mb-4">
         Here are some more projects I've been working on recently, pulled from my
         <a href="" class="link text-[#6366f1] underline">github</a> profile:

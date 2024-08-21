@@ -4,6 +4,7 @@ export enum Technologies {
   VITE = 'Vite',
   TYPESCRIPT = 'TypeScript',
   JAVASCRIPT = 'JavaScript',
+  SQL = 'SQL',
   HTML = 'HTML',
   CSS = 'CSS',
   SASS = 'Sass',
@@ -45,7 +46,9 @@ export enum Technologies {
   NEXT = 'Next',
   REDUX = 'Redux',
   SVELTE = 'Svelte',
-  SVELTEKIT = 'SvelteKit'
+  SVELTEKIT = 'SvelteKit',
+  HANDLEBARS = 'Handlebars',
+  AZURE = 'Azure'
 }
 
 export type Project = {
@@ -54,4 +57,22 @@ export type Project = {
   image: string
   link: string
   technologies: Technologies[]
+}
+
+export type Employment = {
+  id: number
+  status: EmploymentStatus
+  startDate: string
+  endDate?: string
+  company: string
+  role: string
+  description: string
+  technologies: Technologies[]
+  logo?: string
+  linkedIn?: string
+}
+
+export enum EmploymentStatus {
+  CURRENTLY_EMPLOYED = 'currently employed',
+  PREVIOUSLY_EMPLOYED = 'previously'
 }

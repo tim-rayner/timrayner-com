@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Button from 'primevue/button'
-import Pill from '@/components/atoms/Pill.vue'
-
+import TimelineVue from '@/components/organisms/Timeline.vue'
+import { EmoploymentHistory } from '@/constants/HomeConstants'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
@@ -24,5 +24,7 @@ const goTo = (id: string) => {
     </p>
 
     <Button label="Contact me" class="my-2" @click="goTo('contact')" rounded />
+
+    <TimelineVue :employmentHistory="EmoploymentHistory" />
   </div>
 </template>
