@@ -11,11 +11,11 @@ import ContactSection from '@/components/organisms/ContactSection.vue'
       <HomeSection />
     </div>
 
-    <div class="my-12">
+    <div class="mt-12 mb-0">
       <AboutSection />
     </div>
 
-    <div class="my-12">
+    <div class="mb-12">
       <ProjectsSection />
     </div>
 

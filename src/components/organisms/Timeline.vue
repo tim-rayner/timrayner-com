@@ -94,7 +94,7 @@ const isEvenId = (id: number) => {
 
 @media screen and (max-width: 1250px) {
   .p-timeline-event {
-    margin-bottom: 3rem !important;
+    margin-bottom: 2rem !important;
   }
 
   .p-timeline-event-opposite {
