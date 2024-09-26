@@ -39,20 +39,20 @@ export const ShowcaseProjects: Project[] = [
       Technologies.REACT_NATIVE,
       Technologies.EXPRESS
     ]
-  },
-  {
-    title: 'Airbnb Clone (WIP)',
-    description:
-      'This work in progress project is a clone of Airbnb. It is being built with React and Next,js taking inspiration from the UX design masters at Airbnb.',
-    image: 'https://via.placeholder.com/150',
-    link: 'https://github.com/tim-rayner/airbnb-clone',
-    technologies: [
-      Technologies.REACT,
-      Technologies.TYPESCRIPT,
-      Technologies.NEXT,
-      Technologies.EXPRESS
-    ]
   }
+  // {
+  //   title: 'Airbnb Clone (WIP)',
+  //   description:
+  //     'This work in progress project is a clone of Airbnb. It is being built with React and Next,js taking inspiration from the UX design masters at Airbnb.',
+  //   image: 'https://via.placeholder.com/150',
+  //   link: 'https://github.com/tim-rayner/airbnb-clone',
+  //   technologies: [
+  //     Technologies.REACT,
+  //     Technologies.TYPESCRIPT,
+  //     Technologies.NEXT,
+  //     Technologies.EXPRESS
+  //   ]
+  // }
 ]
 
 export const EmoploymentHistory: Employment[] = [
@@ -99,7 +99,7 @@ export const EmoploymentHistory: Employment[] = [
     ],
     description: `<p>As a Full Stack Junior Developer at Asprey Assets, I contributed to building cloud-based, single-page applications and APIs for social housing committees. Working at Asprey allowed me to refine my expertise in Angular, .NET Core, and Microsoft SQL Server. I played a key role in developing and deploying new features through a CI/CD pipeline using Git, collaborating closely with the team.</p></br>  
                   <p>I led the integration of a comprehensive testing infrastructure across our existing system. This self-initiated project, along with my regular development tasks, strengthened my time management and team leadership skills.</p></br>`,
-    logo: 'https://media.licdn.com/dms/image/v2/C4D0BAQGL03XRqjCXnA/company-logo_200_200/company-logo_200_200/0/1630495261709/asprey_management_solutions_logo?e=1732147200&v=beta&t=UEutTk2z1DmqVKEXafPjm8IKMt2gazH0Kd8yDxO1uTE',
+    logo: 'https://media.licdn.com/dms/image/v2/C4D0BAQGL03XRqjCXnA/company-logo_200_200/company-logo_200_200/0/1630495261709/asprey_management_solutions_logo?e=1732147200&v=beta&t=UEutTk2z1DmqVKEXafPjm8IKMt2gazH0Kd8yDxO1uTE'
   },
   {
     id: 3,
