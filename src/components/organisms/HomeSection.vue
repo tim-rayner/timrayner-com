@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-
 import { useUser } from '@/composables/useGithubApi'
 import { computed } from 'vue'
+import Button from 'primevue/button'
+import { onDownloadCV } from '@/helpers/download-helpers'
 
 const userQuery = useUser('tim-rayner')
 
@@ -28,6 +29,15 @@ const avatar_url = computed(() => userQuery.data?.value?.avatar_url)
       <a href="https://linkedin.com/in/tim-rayner" target="_blank" rel="noopener noreferrer">
         <font-awesome-icon :icon="faLinkedin" class="h-6 mt-6 mr-4 text-[#727c8d]" />
       </a>
+    </div>
+
+    <div class="mt-6 md:hidden">
+      <Button
+        label="Download CV"
+        icon="pi pi-download"
+        class="p-button-rounded p-button-outlined"
+        @click="onDownloadCV"
+      />
     </div>
   </div>
 </template>

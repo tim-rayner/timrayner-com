@@ -3,6 +3,7 @@ import Button from 'primevue/button'
 import TimelineVue from '@/components/organisms/Timeline.vue'
 import { EmoploymentHistory } from '@/constants/HomeConstants'
 import { useRouter } from 'vue-router'
+import { onDownloadCV } from '@/helpers/download-helpers'
 
 const router = useRouter()
 
@@ -23,7 +24,15 @@ const goTo = (id: string) => {
       Scroll to explore more about my work, skills & experience. Or click the button to reach out
     </p>
 
-    <Button label="Contact me" class="my-6" @click="goTo('contact')" rounded />
+    <div class="flex flex-row">
+      <Button label="Contact me" class="my-6 mr-3" @click="goTo('contact')" rounded />
+      <Button
+        label="Download CV"
+        class="p-button-outlined my-6 mr-3 !hidden md:!block"
+        @click="onDownloadCV"
+        rounded
+      />
+    </div>
 
     <div class="my-6">
       <h2 class="text-xl md:text-2xl md:text-center">My story, so far...</h2>
