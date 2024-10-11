@@ -20,15 +20,20 @@ const goTo = (id: string) => {
       A full stack software developer based in the UK. With over 6 years of commercial experience, I
       have a passion for building projects & solving problems with code.
     </p>
-    <p class="my-2 mb-4 md:w-2/3">
+    <p class="my-2 md:w-2/3">
       Scroll to explore more about my work, skills & experience. Or click the button to reach out
     </p>
 
     <div class="flex flex-row">
-      <Button label="Contact me" class="my-6 mr-3" @click="goTo('contact')" rounded />
+      <Button
+        label="Contact me"
+        class="my-6 mr-3 p-button-outlined"
+        @click="goTo('contact')"
+        rounded
+      />
       <Button
         label="Download CV"
-        class="p-button-outlined my-6 mr-3 !hidden md:!block"
+        class="my-6 mr-3 !hidden md:!block"
         @click="onDownloadCV"
         rounded
       />

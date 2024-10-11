@@ -46,7 +46,7 @@ onUnmounted(() => {
 
 <template>
   <nav
-    class="text-white px-6 py-3 rounded-3xl max-w-[375px] md:max-w-[600px] mx-auto mb-6 fixed top-6 left-0 right-0 z-10"
+    class="text-white px-6 py-3 rounded-3xl max-w-[335px] md:max-w-[600px] mx-auto mb-6 fixed top-6 left-0 right-0 z-10"
     :class="{ 'bg-[#292929] shadow-purple-500/10 ': hasScrolled }"
   >
     <ul class="flex justify-between">
