@@ -72,6 +72,7 @@ export const EmoploymentHistory: Employment[] = [
     company: 'Mobilityways (Liftshare)',
     status: EmploymentStatus.PREVIOUSLY_EMPLOYED,
     startDate: '08/08/2022',
+    endDate: '30/12/2024',
     role: 'Frontend Developer',
     technologies: [
       Technologies.VUE,
