@@ -48,7 +48,14 @@ export enum Technologies {
   SVELTE = 'Svelte',
   SVELTEKIT = 'SvelteKit',
   HANDLEBARS = 'Handlebars',
-  AZURE = 'Azure'
+  AZURE = 'Azure',
+  NEST = 'Nest',
+  MSW = 'Mock Service Worker',
+  REDIS = 'Redis',
+  POSTGRESQL = 'PostgreSQL',
+  TRPC = 'tRPC',
+  AWS = 'AWS',
+  GITLAB = 'GitLab'
 }
 
 export type Project = {

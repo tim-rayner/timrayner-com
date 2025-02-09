@@ -1,13 +1,7 @@
 <script setup lang="ts">
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import {
-  faMapPin,
-  faMap,
-  faMapMarker,
-  faMapLocation,
-  faMapLocationDot
-} from '@fortawesome/free-solid-svg-icons'
+import { faMapLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { useUser } from '@/composables/useGithubApi'
 import { computed } from 'vue'
 import Button from 'primevue/button'

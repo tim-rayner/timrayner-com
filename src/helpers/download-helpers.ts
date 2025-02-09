@@ -1,4 +1,4 @@
-import CV from '@/assets/pdf/TimRaynerCV24.dates.pdf'
+import CV from '@/assets/pdf/TimRaynerCV25.pdf'
 
 export const onDownloadCV = () => {
   const link = document.createElement('a')
