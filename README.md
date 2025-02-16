@@ -11,7 +11,7 @@ Typescript, React, Next, Nest, Vue, Nuxt, Angular, C#, PostgreSQL, MSQL.
 
 Procedural programming, OOP, Functional Programming, EDP, 
 
-### 🗒️ My Current Development TODO list:
+### My Current Development TODO list:
 
 ☑️ learning Domain Driven Design 🧠
 
