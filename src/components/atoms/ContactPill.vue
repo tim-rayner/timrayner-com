@@ -3,30 +3,41 @@ type ContactPillProps = {
   icon: any
   label: string
   link?: string
+  class?: string
 }
 
-const { icon, label } = defineProps<ContactPillProps>()
+const { icon, label, link, class: additionalClass } = defineProps<ContactPillProps>()
 </script>
 
 <template>
   <div
     v-if="link"
     :class="[
-      'flex items-center content-center text-[#6366f1] bg-[#171b27] py-1 pr-6 pl-2 my-3 md:my-4 text-xs md:text-lg rounded-2xl w-fit cursor-pointer'
+      'contact-pill flex items-center content-center text-[#6366f1] bg-[#171b27] py-4 px-6 text-sm md:text-lg rounded-2xl w-full cursor-pointer transition-all duration-300 hover:bg-[#1a1f2e] hover:text-white hover:shadow-lg hover:shadow-[#6366f1]/20 hover:border-[#6366f1]/30 border border-transparent group',
+      additionalClass
     ]"
   >
-    <a :href="link" target="_blank" rel="noopener noreferrer" class="flex items-center">
-      <font-awesome-icon :icon="icon" class="p-2" />
-      <p>{{ label }}</p>
+    <a :href="link" target="_blank" rel="noopener noreferrer" class="flex items-center w-full">
+      <div
+        class="bg-[#6366f1]/10 group-hover:bg-[#6366f1]/20 rounded-full p-3 mr-4 transition-all duration-300"
+      >
+        <font-awesome-icon :icon="icon" class="text-lg" />
+      </div>
+      <p class="font-medium">{{ label }}</p>
     </a>
   </div>
   <div
     v-else
     :class="[
-      'flex items-center content-center text-[#6366f1] bg-[#171b27] py-1 pr-6 pl-2 my-3 md:my-4 text-xs md:text-lg rounded-2xl w-fit cursor-pointer'
+      'contact-pill flex items-center content-center text-[#6366f1] bg-[#171b27] py-4 px-6 text-sm md:text-lg rounded-2xl w-full cursor-default transition-all duration-300 hover:bg-[#1a1f2e] hover:text-white hover:shadow-lg hover:shadow-[#6366f1]/20 hover:border-[#6366f1]/30 border border-transparent group',
+      additionalClass
     ]"
   >
-    <font-awesome-icon :icon="icon" class="p-2" />
-    <p>{{ label }}</p>
+    <div
+      class="bg-[#6366f1]/10 group-hover:bg-[#6366f1]/20 rounded-full p-3 mr-4 transition-all duration-300"
+    >
+      <font-awesome-icon :icon="icon" class="text-lg" />
+    </div>
+    <p class="font-medium">{{ label }}</p>
   </div>
 </template>

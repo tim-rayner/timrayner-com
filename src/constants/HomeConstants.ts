@@ -1,14 +1,14 @@
 //@ts-nocheck
 
 import {
+  EmploymentStatus,
   Technologies,
-  type Project,
   type Employment,
-  EmploymentStatus
+  type Project
 } from '@/types/homepageTypes'
 
-import SoundSpotImg from '@/assets/png/soundSpot-screen.png'
 import LunaTunesImg from '@/assets/png/LunaTunes-screen.png'
+import SoundSpotImg from '@/assets/png/soundSpot-screen.png'
 
 export const ShowcaseProjects: Project[] = [
   {
@@ -39,6 +39,33 @@ export const ShowcaseProjects: Project[] = [
       Technologies.REACT_NATIVE,
       Technologies.EXPRESS
     ]
+  },
+  {
+    title: 'DreamDrive',
+    description: 'Your car. Any street. Any dream.',
+    image: null,
+    link: 'https://github.com/tim-rayner/dream-drive',
+    technologies: [
+      Technologies.REACT,
+      Technologies.TYPESCRIPT,
+      Technologies.NEXT,
+      Technologies.SUPABASE,
+      Technologies.DOCKER,
+      Technologies.NODE
+    ]
+  },
+  {
+    title: 'Starttline',
+    description: 'Reverse engineering Beryl - Helping you get a head start on your local commute',
+    link: 'https://github.com/tim-rayner/starttline',
+    technologies: [
+      Technologies.REACT,
+      Technologies.TYPESCRIPT,
+      Technologies.NEXT,
+      Technologies.SUPABASE,
+      Technologies.DOCKER,
+      Technologies.NODE
+    ]
   }
 ]
 
@@ -61,9 +88,9 @@ export const EmoploymentHistory: Employment[] = [
       Technologies.DOCKER,
       Technologies.GITLAB
     ],
-    description: `<p> I am currently working as a Full Stack Engineer at Artlist.io, building a platform for creators to find and use music in their projects.</p></br>
-    <p>I am working with a range of technologies including Next.js, Nest.js, TypeScript, PostgreSQL, Redis, AWS, Docker, and GitLab.</p></br>
-    <p>I am also working with the latest AI tools to help with development and design.</p></br>`,
+    description: `<p>I am currently working as a Full Stack Engineer at Artlist.io, contributing to a platform that enables creators to discover, manage, and use music, video, templates, and other creative assets in their projects at scale.</p></br>
+<p>My work spans the full stack with technologies including Next.js, Nest.js, TypeScript, PostgreSQL, Redis, AWS, Docker, and GitLab, with a focus on building secure, reliable distributed systems.</p></br>
+<p>Most recently I transitioned into leading a new cross-functional AI initiative team (under NDA), where I collaborate with engineers, designers, and product stakeholders to explore and integrate emerging AI tools, shaping the next generation of content creation and curation experiences.</p></br>`,
     logo: 'https://media.licdn.com/dms/image/v2/C560BAQE6wfutfUhOtw/company-logo_100_100/company-logo_100_100/0/1671469981018/art_list_logo?e=2147483647&v=beta&t=Jsvcy5hXIYZ-HELigDVidNeQupL2hzeCtMvt0Ce6-4E',
     linkedIn: 'https://www.linkedin.com/products/art-list-artlist/'
   },

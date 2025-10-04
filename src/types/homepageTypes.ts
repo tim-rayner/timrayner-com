@@ -55,13 +55,14 @@ export enum Technologies {
   POSTGRESQL = 'PostgreSQL',
   TRPC = 'tRPC',
   AWS = 'AWS',
-  GITLAB = 'GitLab'
+  GITLAB = 'GitLab',
+  SUPABASE = 'Supabase'
 }
 
 export type Project = {
   title: string
   description: string
-  image: string
+  image?: string
   link: string
   technologies: Technologies[]
 }
