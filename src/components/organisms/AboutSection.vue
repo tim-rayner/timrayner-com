@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import Button from 'primevue/button'
 import TimelineVue from '@/components/organisms/Timeline.vue'
 import { EmoploymentHistory } from '@/constants/HomeConstants'
-import { useRouter } from 'vue-router'
 import { onDownloadCV } from '@/helpers/download-helpers'
+import Button from 'primevue/button'
+import { useRouter } from 'vue-router'
 
 const router = useRouter()
 
@@ -17,7 +17,7 @@ const goTo = (id: string) => {
     <h2 class="text-xl md:text-2xl">Hi, I'm Tim 👋🏻</h2>
 
     <p class="my-2 mb-4 md:mb-4 md:w-2/3">
-      A full stack software developer based in the UK. With over 5 years of commercial experience, I
+      A full stack software developer based in the UK. With over 7 years of commercial experience, I
       have a passion for building projects & solving problems with code.
     </p>
     <p class="my-2 md:w-2/3">
